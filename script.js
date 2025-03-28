@@ -3,8 +3,6 @@ const animeList = [
   { title: "Naruto", episodes: 700, watched: 500 }, 
   { title: "Highschool of the Dead", episodes: 12, watched: 5 },
 ];
-const animeList = [
-  {
     title: "Highschool of the Dead",
     episodes: [
       { title: "Episode 1", watched: false },
