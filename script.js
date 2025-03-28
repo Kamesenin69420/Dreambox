@@ -21,8 +21,7 @@ const animeList = [
     title: "Jimihen!! Jimiko wo Kaechau Jun Isei Kouyuu",
     episodes: 5,
     watched: 0,
-    image: "  https://www.nautiljon.com/images/anime/00/15/mini/jimihen_jimiko_wo_kae_chau_jun_isei_kouyuu_9851.webp
-"
+    image: "https://www.nautiljon.com/images/anime/00/15/mini/jimihen_jimiko_wo_kae_chau_jun_isei_kouyuu_9851.webp"
   },
   {
     title: "Highschool of the Dead",
