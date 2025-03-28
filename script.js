@@ -15,8 +15,7 @@ const animeList = [
     title: "Highschool of the Dead",
     episodes: 12,
     watched: 5,
-    image: "highschool-of-the-dead-main.JPG"
-  }
+image: "https://upload.wikimedia.org/wikipedia/en/7/7b/Highschool_of_the_Dead_DVD.jpg"  }
 ];
 
 function displayAnimes() {
