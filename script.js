@@ -13,7 +13,7 @@ const animeList = [
   },
    {
     title: "Interspecies Reviewer",
-    episodes: 24,
+    episodes: 12,
     watched: 5,
     image: "https://i.imgur.com/G8H1ahP.jpeg"
   },
