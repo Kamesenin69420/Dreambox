@@ -27,7 +27,43 @@ const animeList = [
     title: "Highschool of the Dead",
     episodes: 12,
     watched: 5,
- image: "highschool-of-the-dead-main.jpg"  }
+ image: "highschool-of-the-dead-main.jpg"  },
+    {
+    title: "Isekai Meikyuu de Harem wo",
+    episodes: 12,
+    watched: 0,
+    image: "https://www.nautiljon.com/images/anime/00/30/mini/isekai_meikyuu_de_harem_wo_9903.webp"
+  },
+    {
+    title: "Harem Camp!",
+    episodes: 8,
+    watched: 0,
+    image: "https://www.nautiljon.com/images/anime/00/09/mini/harem_camp_11390.webp"
+  },
+    {
+    title: "Joshi Ochi! : 2-kai kara Onna no Ko ga... Futte kita!?",
+    episodes: 9,
+    watched: 0,
+    image: "https://www.nautiljon.com/images/anime/00/86/mini/joshi_ochi_2-kai_kara_onna_no_ko_ga_futte_kita_y_7968.webp"
+  },
+    {
+    title: "Kagaku na Yatsura",
+    episodes: 1,
+    watched: 0,
+    image: "https://www.nautiljon.com/images/anime/00/42/mini/kagaku_na_yatsura_3824.webp"
+  },
+    {
+    title: "1+2=Paradise",
+    episodes: 2,
+    watched: 0,
+    image: "https://www.nautiljon.com/images/anime/00/82/mini/1_2_paradise_3728.webp"
+  },
+    {
+    title: "1+2=Paradise",
+    episodes: 2,
+    watched: 0,
+    image: "https://www.nautiljon.com/images/anime/00/82/mini/1_2_paradise_3728.webp"
+  }
 ];
 
 function displayAnimes() {
