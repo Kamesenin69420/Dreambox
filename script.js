@@ -3,19 +3,19 @@ const animeList = [
     title: "One Piece",
     episodes: 1000,
     watched: 150,
-    image: "one-piece-main.JPG"
+    image: "one-piece-main.jpg"
   },
   {
     title: "Naruto",
     episodes: 700,
     watched: 500,
-    image: "naruto-main.JPG"
+    image: "naruto-main.jpg"
   },
   {
     title: "Highschool of the Dead",
     episodes: 12,
     watched: 5,
-image: "https://upload.wikimedia.org/wikipedia/en/7/7b/Highschool_of_the_Dead_DVD.jpg"  }
+ image: "highschool-of-the-dead-main.jpg"  }
 ];
 
 function displayAnimes() {
