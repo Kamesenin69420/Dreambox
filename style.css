@@ -31,3 +31,30 @@ h1 {
   width: 150px;
   text-align: center;
 }
+
+/* === Styles pour uniformiser les images === */
+.anime-image {
+  width: 150px;  /* Ajuste la largeur */
+  height: 220px; /* Ajuste la hauteur pour éviter les déformations */
+  object-fit: cover; /* Coupe l'image pour qu'elle rentre sans déformation */
+  border-radius: 8px; /* Arrondi les coins pour un meilleur design */
+  display: block; /* Évite que l'image touche le texte */
+  margin: 0 auto; /* Centre l'image dans son conteneur */
+}
+
+/* === Organisation des éléments pour éviter le chevauchement === */
+#anime-list {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si besoin */
+  justify-content: center; /* Centre les éléments */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+.anime-item {
+  width: 180px; /* Taille de chaque carte */
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
