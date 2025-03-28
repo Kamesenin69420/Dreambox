@@ -1,9 +1,9 @@
 const animeList = [
   {
-    title: "One Piece",
-    episodes: 1000,
-    watched: 150,
-    image: "one-piece-main.jpg"
+    title: "Goblin Slayer",
+    episodes: 12,
+    watched: 0,
+    image: "https://i.imgur.com/cVLnIpN_d.jpeg"
   },
   {
     title: "Cleavage",
