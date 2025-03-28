@@ -6,10 +6,10 @@ const animeList = [
     image: "one-piece-main.jpg"
   },
   {
-    title: "Naruto",
-    episodes: 700,
-    watched: 500,
-    image: "naruto-main.jpg"
+    title: "Cleavage",
+    episodes: 2,
+    watched: 2,
+    image: "https://i.imgur.com/DJJ5UBJ.jpeg"
   },
    {
     title: "Interspecies Reviewer",
