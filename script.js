@@ -15,7 +15,7 @@ const animeList = [
     title: "Highschool of the Dead",
     episodes: 12,
     watched: 5,
-    image: "highschool_of_the_dead_main.jpg"
+    image: "highschool-of-the-dead-main.jpg"
   }
 ];
 
