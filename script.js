@@ -3,13 +3,13 @@ const animeList = [
     title: "One Piece",
     episodes: 1000,
     watched: 150,
-    image: "one-piece.jpg"
+    image: "one-piece-main.jpg"
   },
   {
     title: "Naruto",
     episodes: 700,
     watched: 500,
-    image: "naruto.jpg"
+    image: "naruto-main.jpg"
   },
   {
     title: "Highschool of the Dead",
