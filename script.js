@@ -1,6 +1,7 @@
 const animeList = [
   { title: "One Piece", episodes: 1000, watched: 150 },
-  { title: "Naruto", episodes: 700, watched: 500 },
+  { title: "Naruto", episodes: 700, watched: 500 }, 
+  { title: "Highschool of the dead", episodes: 12, watched: 4 },
 ];
 
 function displayAnimes() {
