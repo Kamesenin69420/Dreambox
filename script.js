@@ -11,6 +11,12 @@ const animeList = [
     watched: 500,
     image: "naruto-main.jpg"
   },
+   {
+    title: "Interspecies Reviewer",
+    episodes: 24,
+    watched: 5,
+    image: "https://i.imgur.com/G8H1ahP.jpeg"
+  },
   {
     title: "Highschool of the Dead",
     episodes: 12,
