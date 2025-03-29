@@ -75,6 +75,11 @@ function getWatchedCount(animeTitle) {
   return localStorage.getItem(animeTitle) || 0;
 }
 
+console.log("animeList chargé :", animeList);
+if (animeList.length === 0) {
+  console.error("⚠️ ERREUR : animeList est vide ! Vérifie comment il est chargé.");
+}
+
 function displayAnimes() {
   console.log("Affichage des animés...");
   console.log(animeList);
@@ -129,8 +134,15 @@ function loadEpisodesPage() {
   if (!animeTitle) return;
 
   document.getElementById("anime-title").textContent = animeTitle;
-
+  
+  console.log("animeList au moment de l'exécution :", animeList);
+  console.log("Titre récupéré depuis l'URL :", animeTitle);
+  
   const anime = animeList.find(a => a.title === animeTitle);
+  if (!anime) {
+  console.error("⚠️ Aucun animé trouvé avec ce titre :", animeTitle);
+  console.error("Liste des titres disponibles :", animeList.map(a => a.title));
+}
   console.log("Animé trouvé :", anime);
 
   if (anime) {
