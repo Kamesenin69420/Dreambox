@@ -87,8 +87,8 @@ function displayAnimes() {
     console.log(`Ajout de : ${anime.title}`);
 
    
-    const animeItem = document.createElement("div");
-    animeItem.classList.add("anime-item");
+    const animeDiv = document.createElement("div");
+     animeDiv.classList.add("anime-item");
     
     const animeImage = document.createElement("img");
     animeImage.src = anime.image;
