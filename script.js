@@ -113,9 +113,11 @@ function loadEpisodesPage() {
 
 function increaseWatched() {
   const animeTitle = new URLSearchParams(window.location.search).get("anime");
-  let watched = parseInt(getWatchedCount(animeTitle), 10);
+  console.log("Augmentation du compteur pour : " + animeTitle); // Vérification
   
+  let watched = parseInt(getWatchedCount(animeTitle), 10);
   const total = parseInt(document.getElementById("total-episodes").textContent, 10);
+  
   if (watched < total) {
     watched++;
     localStorage.setItem(animeTitle, watched);
@@ -125,8 +127,9 @@ function increaseWatched() {
 
 function decreaseWatched() {
   const animeTitle = new URLSearchParams(window.location.search).get("anime");
-  let watched = parseInt(getWatchedCount(animeTitle), 10);
+  console.log("Diminution du compteur pour : " + animeTitle); // Vérification
 
+  let watched = parseInt(getWatchedCount(animeTitle), 10);
   if (watched > 0) {
     watched--;
     localStorage.setItem(animeTitle, watched);
