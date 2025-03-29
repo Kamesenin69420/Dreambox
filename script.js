@@ -69,6 +69,18 @@ const animeList = [
     episodes: 8,
     watched: 0,
     image: "https://www.nautiljon.com/images/anime/00/28/showtime_uta_no_onee-san_datte_shitai_2_10882.webp"
+  },
+    {
+    title: "Yoasobi Gurashi!",
+    episodes: 8,
+    watched: 0,
+    image: "https://www.nautiljon.com/images/anime/00/59/yoasobi_gurashi_12695.webp"
+  },
+    {
+    title: "Araiya-san! : Ore to Aitsu ga Onnayu de !?",
+    episodes: 8,
+    watched: 0,
+    image: "https://www.nautiljon.com/images/anime/00/32/araiya-san_ore_to_aitsu_ga_onnayu_de_y_8523.webp"
   }
 ];
 
