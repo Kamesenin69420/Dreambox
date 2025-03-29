@@ -20,5 +20,27 @@
   <a href="index.html">Retour</a>
 
   <script src="script.js"></script>
+  
+  <script>
+  function loadEpisodesPage() {
+    const params = new URLSearchParams(window.location.search);
+    const animeTitle = params.get("anime");
+
+    if (!animeTitle) return;
+
+    // Recherche de l'animé dans animeList
+    const anime = animeList.find(a => a.title === animeTitle);
+    if (anime) {
+      // Mettre à jour le titre et les informations
+      document.getElementById("anime-title").textContent = anime.title;
+      document.getElementById("total-episodes").textContent = anime.episodes;
+      document.getElementById("watched-count").textContent = getWatchedCount(animeTitle);
+    }
+  }
+
+  // Charger les données de l'animé sélectionné lors du chargement de la page
+  window.onload = loadEpisodesPage;
+</script>
+
 </body>
 </html>
