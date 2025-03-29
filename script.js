@@ -116,9 +116,14 @@ function displayAnimes() {
 
 function loadEpisodesPage() {
   console.log("loadEpisodesPage() exécutée"); // Vérification
-  
+
+   if (!document.getElementById("anime-title")) {
+    console.warn("loadEpisodesPage() appelée sur la mauvaise page !");
+    return;
+  }
   const params = new URLSearchParams(window.location.search);
   const animeTitle = params.get("anime");
+  
   console.log("Titre de l'animé récupéré :", animeTitle);
 
   if (!animeTitle) return;
