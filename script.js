@@ -2,7 +2,7 @@ const animeList = [
   {
     title: "Goblin Slayer",
     episodes: 12,
-    watched: 0,
+    watched: 1,
     image: "https://i.imgur.com/cVLnIpN_d.jpeg"
   },
   {
