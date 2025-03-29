@@ -109,6 +109,9 @@ function displayAnimes() {
     animeContainer.appendChild(animeDiv);
   });
 }
+
+console.log("animeList chargé :", animeList);
+
 function loadEpisodesPage() {
   console.log("loadEpisodesPage() exécutée");
   
