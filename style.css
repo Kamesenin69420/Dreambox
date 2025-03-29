@@ -32,11 +32,11 @@ h1 {
 }
 
 .anime-image {
-  width: 150px;  /* Définit une largeur fixe */
+  width: 150px; /* Définit une largeur fixe */
   height: 200px; /* Définit une hauteur fixe */
-  object-fit: cover;  /* Ajuste l’image sans la déformer */
-  border-radius: 8px; /* Arrondit les coins */
+  object-fit: cover; /* Coupe l’image pour éviter la déformation */
+  border-radius: 8px;
   display: block;
-  margin: 0 auto; /* Centre l'image */
+  margin: 0 auto;
 }
 
