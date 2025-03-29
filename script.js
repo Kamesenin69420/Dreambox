@@ -1,4 +1,4 @@
-alert("Pour un public averti");
+alert("Pour un public averti !!");
 const animeList = [
   {
     title: "Goblin Slayer",
