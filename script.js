@@ -56,13 +56,13 @@ const animeList = [
     title: "1+2=Paradise",
     episodes: 2,
     watched: 0,
-    image: "https://www.nautiljon.com/images/anime/00/82/mini/1_2_paradise_3728.webp"
+    image: "https://www.nautiljon.com/images/anime/00/82/1_2_paradise_3728.webp"
   },
     {
-    title: "1+2=Paradise",
-    episodes: 2,
+    title: "Showtime! Uta no Onee-san Datte Shitai 2",
+    episodes: 8,
     watched: 0,
-    image: "https://www.nautiljon.com/images/anime/00/82/mini/1_2_paradise_3728.webp"
+    image: "https://www.nautiljon.com/images/anime/00/82/1_2_paradise_3728.webp"
   }
 ];
 
