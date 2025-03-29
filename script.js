@@ -9,7 +9,7 @@ const animeList = [
     episodes: 2,
     image: "https://i.imgur.com/DJJ5UBJ.jpeg"
   },
-   {
+  {
     title: "Interspecies Reviewer",
     episodes: 12,
     image: "https://i.imgur.com/G8H1ahP.jpeg"
@@ -22,48 +22,49 @@ const animeList = [
   {
     title: "Highschool of the Dead",
     episodes: 12,
- image: "highschool-of-the-dead-main.jpg"  },
-    {
+    image: "highschool-of-the-dead-main.jpg"  
+  },
+  {
     title: "Isekai Meikyuu de Harem wo",
     episodes: 12,
     image: "https://www.nautiljon.com/images/anime/00/30/isekai_meikyuu_de_harem_wo_9903.webp"
   },
-    {
+  {
     title: "Harem Camp!",
     episodes: 8,
     image: "https://www.nautiljon.com/images/anime/00/09/harem_camp_11390.webp"
   },
-    {
+  {
     title: "Joshi Ochi! : 2-kai kara Onna no Ko ga... Futte kita!?",
     episodes: 9,
     image: "https://www.nautiljon.com/images/anime/00/86/joshi_ochi_2-kai_kara_onna_no_ko_ga_futte_kita_y_7968.webp"
   },
-    {
+  {
     title: "Kagaku na Yatsura",
     episodes: 1,
     image: "https://www.nautiljon.com/images/anime/00/42/kagaku_na_yatsura_3824.webp"
   },
-    {
+  {
     title: "1+2=Paradise",
     episodes: 2,
     image: "https://www.nautiljon.com/images/anime/00/82/1_2_paradise_3728.webp"
   },
-    {
+  {
     title: "Showtime! Uta no Onee-san Datte Shitai",
     episodes: 8,
     image: "https://www.nautiljon.com/images/anime/00/91/showtime_uta_no_onee-san_datte_shitai_10619.webp"
   },
-    {
+  {
     title: "Showtime! Uta no Onee-san Datte Shitai 2",
     episodes: 8,
     image: "https://www.nautiljon.com/images/anime/00/28/showtime_uta_no_onee-san_datte_shitai_2_10882.webp"
   },
-    {
+  {
     title: "Yoasobi Gurashi!",
     episodes: 8,
     image: "https://www.nautiljon.com/images/anime/00/59/yoasobi_gurashi_12695.webp"
   },
-    {
+  {
     title: "Araiya-san! : Ore to Aitsu ga Onnayu de !?",
     episodes: 8,
     image: "https://www.nautiljon.com/images/anime/00/32/araiya-san_ore_to_aitsu_ga_onnayu_de_y_8523.webp"
@@ -81,6 +82,7 @@ function displayAnimes() {
   animeList.forEach(anime => {
     const animeDiv = document.createElement('div');
     animeDiv.classList.add('anime-item');
+    
     animeDiv.innerHTML = `
       <h3>${anime.title}</h3>
       <img src="${anime.image}" alt="${anime.title}" class="anime-image">
