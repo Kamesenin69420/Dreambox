@@ -96,6 +96,7 @@ function displayAnimes() {
 }
 
 function loadEpisodesPage() {
+  console.log("loadEpisodesPage() exécutée"); // Ajout pour vérifier
   const params = new URLSearchParams(window.location.search);
   const animeTitle = params.get("anime");
 
@@ -105,7 +106,7 @@ function loadEpisodesPage() {
   
   const anime = animeList.find(a => a.title === animeTitle);
   if (anime) {
-    document.getElementById("total-episodes").textContent = anime.episodes.length;
+    document.getElementById("total-episodes").textContent = anime.episodes;
     document.getElementById("watched-count").textContent = getWatchedCount(animeTitle);
   }
 }
