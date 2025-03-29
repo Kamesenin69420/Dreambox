@@ -58,7 +58,7 @@ const animeList = [
   {
     title: "Showtime! Uta no Onee-san Datte Shitai 2",
     episodes: 8,
-    image: "https://m.media-amazon.com/images/S/pv-target-images/48a2a97938eefc2c5176efeee16b44f682da2b4b1dc9fc0a2cf1e7a4e15946d5.png"
+    image: "https://www.nautiljon.com/images/manga/00/10/kagaku_na_yatsura_4101.webp"
   },
   {
     title: "Yoasobi Gurashi!",
