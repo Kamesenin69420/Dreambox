@@ -77,7 +77,7 @@ function getWatchedCount(animeTitle) {
 
 function displayAnimes() {
   console.log("Affichage des animés...");
-
+  console.log(animeList);
   const animeContainer = document.getElementById('anime-list');
   
   if (!animeContainer) {
