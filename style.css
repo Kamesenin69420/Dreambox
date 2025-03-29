@@ -32,10 +32,10 @@ h1 {
 }
 
 .anime-image {
-  width: 100%;  /* Utilise 100% de la largeur disponible dans l'élément parent */
-  height: auto;  /* Laisse l'image s'ajuster automatiquement en hauteur */
-  object-fit: cover;  /* Coupe l'image pour qu'elle entre bien sans déformation */
-  border-radius: 8px; /* Arrondi les coins de l'image */
+  width: 150px;  /* Définit une largeur fixe */
+  height: 200px; /* Définit une hauteur fixe */
+  object-fit: cover;  /* Ajuste l’image sans la déformer */
+  border-radius: 8px; /* Arrondit les coins */
   display: block;
   margin: 0 auto; /* Centre l'image */
 }
