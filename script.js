@@ -1,3 +1,4 @@
+alert("Le script JavaScript est bien chargé !");
 const animeList = [
   {
     title: "Goblin Slayer",
