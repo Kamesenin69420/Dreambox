@@ -103,12 +103,12 @@ function displayAnimes() {
      animeImage.classList.add("anime-image"); // Ajout de la classe ici !
 
      animeDiv.innerHTML = `
-    <img class="anime-image" src="${anime.image}" alt="${anime.title}">
-    <h3>${anime.title}</h3>
-    <a href="episodes.html?title=${encodeURIComponent(anime.title)}&image=${encodeURIComponent(anime.image)}">Voir les épisodes</a>
-  `;
-  document.getElementById('anime-list').appendChild(animeItem);
-});
+      <img class="anime-image" src="${anime.image}" alt="${anime.title}">
+      <h3>${anime.title}</h3>
+      <a href="episodes.html?title=${encodeURIComponent(anime.title)}&image=${encodeURIComponent(anime.image)}">Voir les épisodes</a>
+    `;
+    document.getElementById('anime-list').appendChild(animeItem);
+  });
  
  
     const animeTitle = document.createElement("h3");
