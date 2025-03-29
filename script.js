@@ -142,6 +142,6 @@ if (window.location.pathname.includes("index.html") || window.location.pathname 
   displayAnimes();
 } else if (window.location.pathname.includes("episodes.html")) {
   loadEpisodesPage();
+}
   
-displayAnimes();
 
