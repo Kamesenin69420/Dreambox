@@ -127,12 +127,9 @@ function decreaseWatched() {
     document.getElementById("watched-count").textContent = watched;
   }
 }
+displayAnimes();
 
-// Exécuter la bonne fonction selon la page
-if (window.location.pathname.includes("index.html") || window.location.pathname === "/") {
-  displayAnimes();
-} else if (window.location.pathname.includes("episodes.html")) {
-  loadEpisodesPage();
-}
+
+
   
 
