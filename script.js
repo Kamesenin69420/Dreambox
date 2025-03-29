@@ -89,6 +89,27 @@ function displayAnimes() {
 
   animeList.forEach(anime => {
     console.log(`Ajout de : ${anime.title}`);
+    const animeDiv = document.createElement("div");
+     animeDiv.classList.add("anime-item");
+     
+    const animeImage = document.createElement("img");
+     animeImage.src = anime.image;
+     animeImage.alt = anime.title;
+     animeImage.classList.add("anime-image"); // Ajout de la classe ici !
+ 
+ 
+    const animeTitle = document.createElement("h3");
+     animeTitle.textContent = anime.title;
+ 
+     // Quand on clique, on ouvre la page de l'animé
+     animeDiv.addEventListener("click", () => {
+       window.location.href = `episodes.html?anime=${encodeURIComponent(anime.title)}`;
+     });
+ 
+     // Ajout des éléments au conteneur
+     animeDiv.appendChild(animeImage);
+     animeDiv.appendChild(animeTitle);
+     animeContainer.appendChild(animeDiv);
   });
 }
 
