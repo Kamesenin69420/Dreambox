@@ -76,25 +76,16 @@ function getWatchedCount(animeTitle) {
 }
 
 function displayAnimes() {
+  console.log("Affichage des animés...");
+  console.log(animeList);
+
   const animeContainer = document.getElementById('anime-list');
-  console.log(document.getElementById("anime-list"));
-  animeContainer.innerHTML = ""; // On vide avant d'ajouter les animés
+  animeContainer.innerHTML = ""; 
 
   animeList.forEach(anime => {
-    const animeDiv = document.createElement('div');
-    animeDiv.classList.add('anime-item');
-    
-    animeDiv.innerHTML = `
-      <h3>${anime.title}</h3>
-      <img src="${anime.image}" alt="${anime.title}" class="anime-image">
-      <p>Episodes: ${anime.episodes}</p>
-      <p>Vu: ${getWatchedCount(anime.title)}</p>
-      <a href="episodes.html?anime=${encodeURIComponent(anime.title)}" class="episodes-btn">Voir les épisodes</a>
-    `;
-    animeContainer.appendChild(animeDiv);
-  });  
+    console.log(`Ajout de : ${anime.title}`);
+  });
 }
-
 function loadEpisodesPage() {
   console.log("loadEpisodesPage() exécutée"); // Ajout pour vérifier
   const params = new URLSearchParams(window.location.search);
