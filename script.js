@@ -43,7 +43,7 @@ const animeList = [
   {
     title: "Kagaku na Yatsura",
     episodes: 1,
-    image: "https://www.nautiljon.com/images/anime/00/42/kagaku_na_yatsura_3824.webp"
+    image: "https://www.nautiljon.com/images/manga/00/10/mini/kagaku_na_yatsura_4101.webp"
   },
   {
     title: "1+2=Paradise",
