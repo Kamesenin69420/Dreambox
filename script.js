@@ -99,6 +99,63 @@ function displayAnimes() {
     `;
     animeContainer.appendChild(animeDiv);
   });
+// ajout display anime
+  animeDiv.innerHTML = `
+  <h3>${anime.title}</h3>
+  <img src="${anime.image}" alt="${anime.title}" class="anime-image">
+  <p>Episodes: ${anime.episodes.length}</p>
+  <p>Vu: ${getWatchedCount(anime.title)}</p>
+  <a href="episodes.html?anime=${encodeURIComponent(anime.title)}" class="episodes-btn">Voir les épisodes</a>
+`;
+// fin ajout
+  
 }
 
 displayAnimes();
+
+function getWatchedCount(animeTitle) {
+  return localStorage.getItem(animeTitle) || 0;
+}
+
+function loadEpisodesPage() {
+  const params = new URLSearchParams(window.location.search);
+  const animeTitle = params.get("anime");
+
+  if (!animeTitle) return;
+
+  document.getElementById("anime-title").textContent = animeTitle;
+  
+  const anime = animeList.find(a => a.title === animeTitle);
+  if (anime) {
+    document.getElementById("total-episodes").textContent = anime.episodes.length;
+    document.getElementById("watched-count").textContent = getWatchedCount(animeTitle);
+  }
+}
+
+function increaseWatched() {
+  const animeTitle = new URLSearchParams(window.location.search).get("anime");
+  let watched = parseInt(getWatchedCount(animeTitle), 10);
+  
+  const total = parseInt(document.getElementById("total-episodes").textContent, 10);
+  if (watched < total) {
+    watched++;
+    localStorage.setItem(animeTitle, watched);
+    document.getElementById("watched-count").textContent = watched;
+  }
+}
+
+function decreaseWatched() {
+  const animeTitle = new URLSearchParams(window.location.search).get("anime");
+  let watched = parseInt(getWatchedCount(animeTitle), 10);
+
+  if (watched > 0) {
+    watched--;
+    localStorage.setItem(animeTitle, watched);
+    document.getElementById("watched-count").textContent = watched;
+  }
+}
+
+if (window.location.pathname.includes("episodes.html")) {
+  loadEpisodesPage();
+}
+
