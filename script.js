@@ -77,6 +77,7 @@ function getWatchedCount(animeTitle) {
 
 function displayAnimes() {
   const animeContainer = document.getElementById('anime-list');
+  console.log(document.getElementById("anime-list"));
   animeContainer.innerHTML = ""; // On vide avant d'ajouter les animés
 
   animeList.forEach(anime => {
