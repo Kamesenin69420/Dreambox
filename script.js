@@ -136,6 +136,8 @@ function loadEpisodesPage() {
   if (anime) {
     document.getElementById("total-episodes").textContent = anime.episodes;
     document.getElementById("watched-count").textContent = getWatchedCount(animeTitle);
+  } else {
+    console.error("Aucun animé trouvé avec ce titre !");
   }
 }
 
