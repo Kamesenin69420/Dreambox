@@ -40,20 +40,3 @@ h1 {
   margin: 0 auto; /* Centre l'image */
 }
 
-/* === Organisation des éléments pour éviter le chevauchement === */
-#anime-list {
-  display: flex;
-  flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si besoin */
-  justify-content: center; /* Centre les éléments */
-  gap: 20px; /* Espacement entre les éléments */
-}
-
-.anime-item {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  width: 180px;  /* Ajuste la largeur des cartes */
-  text-align: center;
-}
