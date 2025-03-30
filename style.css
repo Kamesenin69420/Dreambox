@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: grey;
+  background-color: #665687;
 }
 header {
   background-color: #333;
@@ -22,7 +22,7 @@ h1 {
 }
 
 .anime-item {
-  background: #ccc;
+  background: #BO84CC;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin: 10px;
