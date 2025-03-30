@@ -64,6 +64,11 @@ const animeList = [
     episodes: 8,
     image: "https://www.nautiljon.com/images/anime/00/59/yoasobi_gurashi_12695.webp"
   },
+   {
+    title: "Food Wars",
+    episodes: 24,
+    image: "https://www.nautiljon.com/images/manga/00/69/food_wars_3496.webp?11704287459"
+  },
   {
     title: "Araiya-san! : Ore to Aitsu ga Onnayu de !?",
     episodes: 8,
