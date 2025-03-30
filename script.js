@@ -88,7 +88,10 @@ function displayAnimes() {
   if (!animeContainer) {
     console.warn("displayAnimes() appelé sur la mauvaise page");
     return;
+  if (window.location.pathname === '/index.html') {
+  displayAnimes(); // Appel de la fonction uniquement sur index.html
   }
+}
 
   animeContainer.innerHTML = ""; 
 
