@@ -69,6 +69,11 @@ const animeList = [
     episodes: 24,
     image: "https://www.nautiljon.com/images/manga/00/69/food_wars_3496.webp?11704287459"
   },
+   {
+    title: "Prison School",
+    episodes: 12,
+    image: "https://www.nautiljon.com/images/manga/00/46/prison_school_1464.webp"
+  },
   {
     title: "Araiya-san! : Ore to Aitsu ga Onnayu de !?",
     episodes: 8,
