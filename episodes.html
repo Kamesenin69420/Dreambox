@@ -29,50 +29,32 @@
   <script src="script.js"></script>
   
   <script>
-
-  function getQueryParameter(name) {
+    function getQueryParameter(name) {
       const urlParams = new URLSearchParams(window.location.search);
       return urlParams.get(name);
     }
 
-    // Afficher l'image et le titre de l'animé
-    function displayAnimeDetails() {
-      const title = getQueryParameter('title');
-      const image = getQueryParameter('image');
+    function loadEpisodesPage() {
+      const params = new URLSearchParams(window.location.search);
+      const animeTitle = params.get("anime");
 
-      const animeTitleDisplay = document.getElementById('anime-title-display');
-      const animeImage = document.getElementById('anime-image');
+      if (!animeTitle) return;
 
-      if (title) {
-        animeTitleDisplay.textContent = title;
-      }
-      if (image) {
-        animeImage.src = image;
+      // Recherche de l'animé dans animeList
+      const anime = animeList.find(a => a.title === animeTitle);
+      if (anime) {
+        // Mettre à jour le titre et les informations
+        document.getElementById("anime-title").textContent = anime.title;
+        document.getElementById("anime-title-display").textContent = anime.title; // Mettre à jour le titre de l'animé
+        document.getElementById("anime-image").src = anime.image; // Mettre à jour l'image
+        document.getElementById("total-episodes").textContent = anime.episodes;
+        document.getElementById("watched-count").textContent = getWatchedCount(animeTitle);
       }
     }
 
-    // Appel de la fonction pour afficher les détails de l'animé au chargement de la page
-    displayAnimeDetails();
-    
-  function loadEpisodesPage() {
-    const params = new URLSearchParams(window.location.search);
-    const animeTitle = params.get("anime");
-
-    if (!animeTitle) return;
-
-    // Recherche de l'animé dans animeList
-    const anime = animeList.find(a => a.title === animeTitle);
-    if (anime) {
-      // Mettre à jour le titre et les informations
-      document.getElementById("anime-title").textContent = anime.title;
-      document.getElementById("total-episodes").textContent = anime.episodes;
-      document.getElementById("watched-count").textContent = getWatchedCount(animeTitle);
-    }
-  }
-
-  // Charger les données de l'animé sélectionné lors du chargement de la page
-  window.onload = loadEpisodesPage;
-</script>
+    // Charger les données de l'animé sélectionné lors du chargement de la page
+    window.onload = loadEpisodesPage;
+  </script>
 
 </body>
 </html>
