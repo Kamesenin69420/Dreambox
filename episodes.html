@@ -29,6 +29,31 @@
   <script src="script.js"></script>
   
   <script>
+
+  function getQueryParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Afficher l'image et le titre de l'animé
+    function displayAnimeDetails() {
+      const title = getQueryParameter('title');
+      const image = getQueryParameter('image');
+
+      const animeTitleDisplay = document.getElementById('anime-title-display');
+      const animeImage = document.getElementById('anime-image');
+
+      if (title) {
+        animeTitleDisplay.textContent = title;
+      }
+      if (image) {
+        animeImage.src = image;
+      }
+    }
+
+    // Appel de la fonction pour afficher les détails de l'animé au chargement de la page
+    displayAnimeDetails();
+    
   function loadEpisodesPage() {
     const params = new URLSearchParams(window.location.search);
     const animeTitle = params.get("anime");
